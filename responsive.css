@@ -1,0 +1,231 @@
+@media screen and (max-width: 600px) {
+    /* header */
+
+    #abrir{
+        display: block;
+        background-color: transparent;
+        border: 0;
+        font-size: 1.25rem;
+        cursor: pointer;
+    }
+    #cerrar{
+        display: block;
+        top:4;
+        background-color: transparent;
+        border: 0;
+        font-size: 1.25rem;
+        cursor: pointer;
+    }
+    #nav{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        background-color: beige;
+        top:0;
+        right: 0;
+        bottom: 0;
+        align-items: end;
+        padding: 3rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+    #nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav{
+        flex-direction: column;
+    }
+    .barra_desplazadora{
+        height: 2rem;
+        text-wrap: nowrap;
+    }
+    .barra_desplazadora p{
+        display: block;
+        font-size: 90%;
+        animation: desplazar 15s linear infinite;
+        padding: 2rem;
+    }
+    @keyframes desplazar {
+        0% {
+            transform: translateX(10%);
+        }
+    
+        100% {
+            transform: translateX(-240%);
+        }
+    }
+
+    /*body*/
+
+    .tendencia{
+        height: 40%;
+    }
+    .tendencia h2{
+        font-size: 24px;
+    }
+
+    /*carousel*/   
+
+    #carosuel-mod,
+    .carousel-item{
+        z-index: -1;
+    }
+
+    /*productos*/
+
+    .productos{
+        padding: 1rem;
+    }
+    .reja{
+        width: 75%;
+        max-width: 1000px;
+        min-width: 300px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Crea columnas con el mismo ancho */
+        grid-gap: 1rem;
+    }
+    .reja img{
+        width: 150%;
+        height: 100%;
+        padding: 1rem;
+    }
+    .coleccion_nueva{
+        padding: 1rem;
+    }
+
+    /*contacto*/
+
+    .contacto p{
+        text-align: center;
+    }
+    section#form input,
+    section#form label,
+    section#form text{
+    width: 70%;
+    }
+    .mapa{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*footer*/
+
+    .footer{
+        width: 100%;
+    }
+    .pago,
+    .redes_sociales{
+        height: 1%;
+        padding:1rem;
+        width: 100%;
+    }
+    .pago p,
+    .redes_sociales p{
+        display: none;
+    }
+}
+
+/*otros dispositivos*/
+@media screen and (min-width:600px) and (max-width:1280px){
+    #abrir{
+        display: block;
+        background-color: transparent;
+        border: 0;
+        font-size: 1.25rem;
+        cursor: pointer;
+    }
+    #cerrar{
+        display: block;
+        top:4;
+        background-color: transparent;
+        border: 0;
+        font-size: 1.25rem;
+        cursor: pointer;
+    }
+    #nav{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        background-color: beige;
+        top:0;
+        right: 0;
+        bottom: 0;
+        align-items: end;
+        padding: 3rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+    #nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav{
+        flex-direction: column;
+    }
+    .barra_desplazadora{
+        text-wrap: nowrap;
+    }
+    .parrafo1{
+        display: none;
+        animation: desplazar 10s linear infinite;
+        font-size: 90%;
+    }
+    .parrafo2{
+        animation: desplazar 10s linear infinite;
+        font-size: 90%;
+        padding: 2rem;
+    }
+    @keyframes desplazar {
+        0% {
+            transform: translateX(10%);
+        }
+    
+        100% {
+            transform: translateX(-180%);
+        }
+    }
+    
+    /*carousel*/
+
+    #carosuel-mod,
+    .carousel-item{
+        z-index: -1;
+    }
+    .reja{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Crea columnas con el mismo ancho */
+        grid-gap: 1rem;
+    }
+    /*contacto*/
+
+    .contacto p{
+        text-align: center;
+    }
+    section#form input,
+    section#form label,
+    section#form text{
+    width: 70%;
+    }
+    .mapa{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*footer*/
+
+    .pago,
+    .redes_sociales{
+        height: 1%;
+        padding:0.5rem;
+        width: 100%;
+    }
+}
+

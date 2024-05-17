@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karma</title>
+    <link rel="shortcut icon" href="imagenes/logo.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header>
+        <div class="barra_desplazadora">
+            <!-- barra desplazadora -->
+            <p class="parrafo1">¡ENVIOS GRATIS A PARTIR DE $90.000! </P>
+            <p class="parrafo2">EXCLUSIVO ONLINE 6 CUOTAS SIN INTERES EN COMPRAS SUPERIORES A $70.000</p>
+        </div>
+        <div class="header">
+            <!-- logo -->
+            <a href="index.html">
+                <img src="imagenes/logokarma.jpg" alt="logoKarma" height="70px" width="120px">
+            </a>
+            <button class="abrir_menu" id="abrir"><i class="bi bi-list"></i></button>
+            <nav class="nav_bar" id="nav">
+                <button class="cerrar_menu" id="cerrar"><i class="bi bi-x"></i></button>
+                <ul class="nav">
+                    <li class="items_nav"><a href="index.html">Inicio</a></li>
+                    <li class="items_nav"><a href="mujer.html">Mujer</a></li>
+                    <li class="items_nav"><a href="hombre.html">Hombre</a></li>
+                    <li class="items_nav"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!--BOOTSTRAP CARROUSEL-->
+    <div id="carosuel-mod">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagenes/carr.jpg" class="d-block w-100" alt="carousel1" height="800%" width="100%">
+                <div class="tendencia">
+                    <h2>Lo último en tendencia </h2>
+                    <p>Porque todos merecemos cosas únicas.</p>
+                    <button class="boton_carousel" onclick="window.location.href = 'contacto.html';">Contactate</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/car1.jpg" class="d-block w-100" alt="carousel2" height="800%" width="100%">
+                <div class="tendencia">
+                    <h2>Lo último en tendencia </h2>
+                    <p>Porque todos merecemos cosas únicas.</p>
+                    <button class="boton_carousel" onclick="window.location.href = 'contacto.html';">Contactate</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/car2.jpg" class="d-block w-100" alt="carousel3" height="800%" width="100%">
+                <div class="tendencia">
+                    <h2>Lo último en tendencia </h2>
+                    <p>Porque todos merecemos cosas únicas.</p>
+                    <button class="boton_carousel" onclick="window.location.href = 'contacto.html';">Contactate</button>
+                </div>
+            </div>
+        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="coleccion_nueva">
+        <h3>Nueva colección 2024</h3>
+        <ul>
+            <li>
+                <img src="imagenes/coleccionnueva.jpg" alt="imagen.coleccion1" height="300rem">
+                <img src="imagenes/coleccionnueva1.jpg" alt="imagen.coleccion2" height="300rem">
+                <img src="imagenes/coleccionnueva2.jpg" alt="imagen.coleccion3" height="300rem"  >
+                <img src="imagenes/coleccionnueva3.jpg" alt="imagen.coleccion4" height="300rem">
+            </li>
+        </ul>
+    </div>
+    <!--final Carrousel-->
+    </main>
+
+    <div class="whatsapp_button">
+        <a href="https://wa.me/+5491123036900?text=Hola%20desde%20mi%20sitio%20web" target="_blank">
+            <img src="iconos/whatsapp.png" alt="WhatsApp" width="100px" height="100px">
+        </a>
+    </div>
+
+    <footer>
+        <div>
+            <a class="tiendas" href="contacto.html"><i class="bi bi-geo-alt"></i> Encontrá tu tienda más cercana</a>
+        </div>
+        <div class="pago">
+            <p>Formas de pago</p>
+            <i class="fa-brands fa-paypal fa-2xl"></i>
+            <p>Paypal</p>
+            <i class="fa-brands fa-cc-visa fa-2xl"></i>
+            <p>Tarjetas de crédito</p>
+            <i class="fa-solid fa-money-bill-1 fa-2xl"></i>
+            <p>Efectivo</p>
+            <i class="fa-solid fa-qrcode fa-2xl"></i>
+            <p>Pago QR</p>
+        </div>
+        <div class="redes_sociales">
+            <p>Redes sociales</p>
+                <a href="https://wa.me/+5491123036900?text=Hola%20desde%20mi%20sitio%20web" target="_blank">
+                    <i class="fa-brands fa-whatsapp fa-2xl" style="color: #000;"></i>
+                    <p>WhatsApp</p>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram fa-2xl" style="color: #000;"></i>
+                    <p>Instagram</p>
+                </a>
+                </a>
+                <a href="https://www.tiktok.com" target="_blank">
+                    <i class="fa-brands fa-tiktok fa-2xl" style="color:#000;"></i>
+                    <p>Tiktok</p>
+                </a>
+                <a href="http://www.facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook-f fa-2xl" style="color: #000;"></i>++
+                    <p>Facebook</p>
+                </a>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/2067fe5f8f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+</body>
+</html>

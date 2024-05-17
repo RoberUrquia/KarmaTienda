@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karma</title>
+    <link rel="shortcut icon" href="imagenes/logo.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header>
+        <div class="barra_desplazadora">
+            <!-- barra desplazadora -->
+            <p class="parrafo1">¡ENVIOS GRATIS A PARTIR DE $90.000! </P>
+            <p class="parrafo2">EXCLUSIVO ONLINE 6 CUOTAS SIN INTERES EN COMPRAS SUPERIORES A $70.000</p>
+        </div>
+        <div class="header">
+            <!-- logo -->
+            <a href="index.html">
+                <img src="imagenes/logokarma.jpg" alt="logoKarma" height="70px" width="120px">
+            </a>
+            <button class="abrir_menu" id="abrir"><i class="bi bi-list"></i></button>
+            <nav class="nav_bar" id="nav">
+                <button class="cerrar_menu" id="cerrar"><i class="bi bi-x"></i></button>
+                <ul class="nav">
+                    <li class="items_nav"><a href="index.html">Inicio</a></li>
+                    <li class="items_nav"><a href="mujer.html">Mujer</a></li>
+                    <li class="items_nav"><a href="hombre.html">Hombre</a></li>
+                    <li class="items_nav"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="contacto">    
+            <h2>CONTACTATE</h2><br>
+            <p>Nuestro télefono: +5411589415845</p>
+            <p>Horarios de atención: Lunes a Viernes de 9 a 18hs / Sábados 9 a 13hs</p>
+            <p>Email: karma@karma.com</p>
+            <p>Nuestras tiendas: Av. Pres. Manuel Quintana 465. Recoleta.</p>
+            <p>Hipólito Yrigoyen 1160. Martínez</p>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9290.051427828832!2d-58.39275670976615!3d-34.590777913907964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1714740495785!5m2!1ses-419!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.2665936790963!2d-58.51659952481914!3d-34.49612505182306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0ff5150b5e5%3A0xb2033b24d01c61c3!2sHip%C3%B3lito%20Yrigoyen%201160%2C%20B1640HEX%20Mart%C3%ADnez%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1715799075208!5m2!1ses-419!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <h5 class="titulo_consulta">Para realizar tu consulta selecciona el motivo del mismo y completa el siguiente formulario:</h5>
+        <div class="motivo-consulta">
+            <input type="radio" name="motivo-consulta" id="r1" > 
+                <label for="devolucion">Devolución</label>
+            <input type="radio" name="motivo-consulta" id="r2" > 
+                <label for="reclamos">Reclamos</label>
+            <input type="radio" name="motivo-consulta" id="r3" >
+                <label for="otros">Otros</label>
+        </div>           
+        <section id="form">
+            <div id="name_campo">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" placeholder="Ingrese su nombre">
+            </div>       
+            <div id="correo_campo"> 
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo" size="30" placeholder="Ingrese un correo electronico" required/>
+            </div>
+            <div id="telefono_campo">
+                <label for="telefono">Teléfono</label> 
+                <input type="tel" id="telefono" pattern="[1-6]{2}[0-9]{4}[0-9]{4}" placeholder="Ingrese un numero de contacto" required/>
+            </div>
+            <div id="asunto_campo">
+                <label for="asunto">Asunto</label> 
+                <input type="text" id="asunto" placeholder="Asunto">
+            </div> 
+            <div>
+            <div id="mensaje_campo">
+                <label for="mensaje">Deje su mensaje</label> 
+                <textarea id="mensaje" name="mensaje" placeholder="Mensaje" rows="5"></textarea> 
+            </div>
+            <section id="boton_campo">
+                <div id="examinar" > 
+                    <input type="file" name="file" aria-label="Archivo">
+                    <label for="compra">Compra</label>
+            <select name="compra" id="compra">
+                    <option value="1">en el Local</option>
+                    <option value="2">Online</option>
+            </select>
+            </section>
+            <div id="enviar_boton">
+                <button type="submit" id="enviar">Enviar Mensaje</button>    
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <a class="tiendas" href="contacto.html"><i class="bi bi-geo-alt"></i> Encontrá tu tienda más cercana</a>
+        </div>
+        <div class="pago">
+            <p>Formas de pago</p>
+            <i class="fa-brands fa-paypal fa-2xl"></i>
+            <p>Paypal</p>
+            <i class="fa-brands fa-cc-visa fa-2xl"></i>
+            <p>Tarjetas de crédito</p>
+            <i class="fa-solid fa-money-bill-1 fa-2xl"></i>
+            <p>Efectivo</p>
+            <i class="fa-solid fa-qrcode fa-2xl"></i>
+            <p>Pago QR</p>
+        </div>
+        <div class="redes_sociales">
+            <p>Redes sociales</p>
+                <a href="https://wa.me/+5491123036900?text=Hola%20desde%20mi%20sitio%20web" target="_blank">
+                    <i class="fa-brands fa-whatsapp fa-2xl" style="color: #000;"></i>
+                    <p>WhatsApp</p>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram fa-2xl" style="color: #000;"></i>
+                    <p>Instagram</p>
+                </a>
+                </a>
+                <a href="https://www.tiktok.com" target="_blank">
+                    <i class="fa-brands fa-tiktok fa-2xl" style="color:#000;"></i>
+                    <p>Tiktok</p>
+                </a>
+                <a href="http://www.facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook-f fa-2xl" style="color: #000;"></i>++
+                    <p>Facebook</p>
+                </a>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/2067fe5f8f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+</body>
+</html>

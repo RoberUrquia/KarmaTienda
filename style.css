@@ -1,0 +1,269 @@
+/*index */
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    margin-top:20px;
+    padding: 2rem;
+    width: 100%;
+}
+.marca{
+    font-size: 20px;
+}
+#abrir , 
+#cerrar{
+    display: none;
+}
+#nav{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50%;
+}
+.nav :hover{
+    color: black;
+    text-decoration: underline;
+}
+li{
+    list-style-type: none;
+}
+.items_nav, a{
+    color: burlywood;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+.barra_desplazadora {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    gap: 1rem;
+    height: 2rem;
+    font-size: 90%;
+    letter-spacing: 2px;
+    z-index: 2000;
+    top:0;
+    width: 100%;
+    background-color: burlywood;
+    text-wrap: nowrap;
+}
+.barra_desplazadora p {
+    padding: 1rem;
+    margin-bottom: 0;
+    font-weight: bold;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 85%;
+    animation: desplazar 20s linear infinite;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+}
+
+/* body carousel */
+
+.tendencia{
+    position: absolute;
+    right: 15%;
+    bottom: 80px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: rgba(187, 183, 183, 0.5);
+}
+
+.tendencia h2{
+    font-size: 40px;
+    font-style: italic;
+    color: bisque;
+}
+
+.tendencia h2{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.tendencia p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.boton_carousel{
+    border-bottom: 2rem;
+    border-color: white;
+    padding: 0.5rem;
+}
+
+/*coleccion nueva*/
+
+.coleccion_nueva h2{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.coleccion_nueva{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+}
+.productos{
+    padding: 2rem;
+}
+
+/*body grid productos*/
+
+.reja{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea columnas con el mismo ancho */
+    grid-gap: 1px;
+}
+.descripcion_producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* whatsapp*/
+
+.whatsapp_button{
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    z-index: 2000;
+    transition: all 5000ms ease;
+}
+.whatsapp_button a:hover{
+    padding: 25px;
+}
+
+/*contacto*/
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    padding:2rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+.mapa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
+section#form input,
+section#form label,
+section#form text{
+    display:block;
+    width: 25%;
+    padding: 0.5em;
+    border-right: 1px 0 ;
+    border-radius: 5px;
+    border-color:1px black; 
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+section#form textarea{
+    width: 50%;
+    border-color:1px black;
+
+}
+section#form {
+    display:block;
+    padding: 0.5em;
+    margin: 0;
+    padding: 1em;
+}
+#examinar{
+    padding: 1em;
+    margin: 0;
+}
+h3{
+    padding: 1em;
+    margin: 0;
+}
+.titulo_consulta{
+    padding: 1em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.motivo-consulta{
+    padding: 1em;
+    margin: 0;
+}
+
+/*footer*/
+
+.footer{
+    width: 100%;
+}
+.bi{
+    padding: 0.5rem;
+}
+.tiendas{
+    display: flex;
+    background-color: black;
+    color:beige;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;  
+    height: 30px;
+    width: 100%;
+}
+.pago{
+    display: flex;
+    background-color: gainsboro;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    height: 20px;
+    width: 100%;
+}
+.pago i{
+    padding: 2rem;
+}
+
+.redes_sociales{
+    display: flex;
+    background-color: grey;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    height: 20px;
+    width: 100%;
+}
+.redes_sociales a{
+    color: black;
+    padding: 2rem;
+}
+
+@keyframes desplazar {
+    0% {
+        transform: translateX(180%);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
