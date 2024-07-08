@@ -79,4 +79,3 @@ function validarTelefono(telefono) {
     const regexTelefono = /^\d{10}$/;
     return regexTelefono.test(telefono);
 }
-

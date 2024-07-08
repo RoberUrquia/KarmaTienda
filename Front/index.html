@@ -33,56 +33,69 @@
                     <li class="items_nav"><a href="mujer.html">Mujer</a></li>
                     <li class="items_nav"><a href="hombre.html">Hombre</a></li>
                     <li class="items_nav"><a href="contacto.html">Contacto</a></li>
+                    <li class="items_nav"><a href="tienda.html">Tienda</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <div>
-            <ul class="productos">
-                <h4>ABRIGOS</h4>
-                <li class="reja">
-                    <img src="imagenes/camperahombre.jpg" alt="camperaHombre" height="400px">
-                    <img src="imagenes/camperahombre1.jpg" alt="camperaHombreModelo" height="400px">
-                    <p class="descripcion_producto">Cazadora acolchada confeccionada en tejido efecto piel. Cuello subido y manga larga acabada en puño interior de rib. Bolsillos de vivo en cadera. Detalle de bolsillo interior. Bajo ajustable con elástico en laterales. Cierre frontal con cremallera.<br><br>
-                    $220.000</p>
-                </li>
-                <li class="reja">
-                    <img src="imagenes/parkahombre.jpg" alt="parkaHombre" height="400px">
-                    <img src="imagenes/parkahombre1.jpg"alt="parkaHombreModelo" height="400px">
-                    <p class="descripcion_producto">Parka larga confeccionada en tejido con acabado engomado. Cuello con capucha y manga larga. Bolsillos de vivo en cadera. Costuras interiores con acabado termosellado. Bajo con abertura en centro espalda. Cierre frontal de botonadura.                       <br><br>
-                    $258.000</p>
-                </li>
-                <li class="reja">               
-                    <img src="imagenes/cazadorahombre.jpg" alt="cazadoraHombre" height="400px">
-                    <img src="imagenes/cazadorahombre1.jpg" alt="cazadoraHombreModelo" height="400px">
-                    <p class="descripcion_producto">Cazadora confeccionada en tejido técnico. Cuello subido y manga larga con detalle de bolsillo. Bolsillos de solapa en cadera. Acabados en rib. Bajo ajustable en laterales con cremallera. Cierre frontal con cremallera.<br><br>
-                    $136.00</p>
-                </li>
-                <li class="reja">
-                    <img src="imagenes/camperajean.jpg" alt="camperaDeJean" height="400px">
-                    <img src="imagenes/camperajean1.jpg" alt="camperaDeJeanModelo" height="400px">
-                    <p class="descripcion_producto">Cazadora relaxed fit confeccionada en denim de algodón. Cuello solapa y manga larga acabada en puño con botón. Bolsillos de solapa en pecho y de vivo en cadera. Efecto lavado con acabados irregulares. Cierre frontal de botonadura.<br><br>
-                    $98.000</p>
-                </li>
-            </ul>
-            <ul class="productos">
-                <h4>CAMISAS</h4>
-                <li class="reja">
-                    <img src="imagenes/camisahombre.jpg" alt="camisaHombre" height="400px">
-                    <img src="imagenes/camisahombre1.jpg" alt="camisaHombreModelo" height="400px">
-                    <p class="descripcion_producto">Camisa boxy fit. Cuello solapa y manga corta. Bolsillo plastrón en pecho. Cierre frontal de botonadura. <br><br>
-                    $47.000</p>
-                </li>
-                <li class="reja">
-                    <img src="imagenes/camisablanca.jpg" alt="camisaBlanca" height="400px">
-                    <img src="imagenes/camisablanca1.jpg" alt="camisaBlancaModelo" height="400px">
-                    <p class="descripcion_producto">Camisa regular fit. Cuello italiano y manga larga acabada en puño con botón. Cierre frontal de botonadura. <br><br>
-                    $35.000</p>
-                </li>
-            </ul>
+        <!--BOOTSTRAP CARROUSEL-->
+    <div id="carosuel-mod">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagenes/carr.jpg" class="d-block w-100" alt="carousel1" height="800%" width="100%">
+                <div class="tendencia">
+                    <h2>Lo último en tendencia </h2>
+                    <p>Porque todos merecemos cosas únicas.</p>
+                    <button class="boton_carousel" onclick="window.location.href = 'contacto.html';">Contactate</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/car1.jpg" class="d-block w-100" alt="carousel2" height="800%" width="100%">
+                <div class="tendencia">
+                    <h2>Lo último en tendencia </h2>
+                    <p>Porque todos merecemos cosas únicas.</p>
+                    <button class="boton_carousel" onclick="window.location.href = 'contacto.html';">Contactate</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/car2.jpg" class="d-block w-100" alt="carousel3" height="800%" width="100%">
+                <div class="tendencia">
+                    <h2>Lo último en tendencia </h2>
+                    <p>Porque todos merecemos cosas únicas.</p>
+                    <button class="boton_carousel" onclick="window.location.href = 'contacto.html';">Contactate</button>
+                </div>
+            </div>
+        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="coleccion_nueva">
+        <h3>Nueva colección 2024</h3>
+        <ul>
+            <li>
+                <img src="imagenes/coleccionnueva.jpg" alt="imagen.coleccion1" height="300rem">
+                <img src="imagenes/coleccionnueva1.jpg" alt="imagen.coleccion2" height="300rem">
+                <img src="imagenes/coleccionnueva2.jpg" alt="imagen.coleccion3" height="300rem"  >
+                <img src="imagenes/coleccionnueva3.jpg" alt="imagen.coleccion4" height="300rem">
+            </li>
+        </ul>
+    </div>
+    <!--final Carrousel-->
     </main>
 
     <div class="whatsapp_button">
